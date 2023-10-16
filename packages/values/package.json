@@ -1,0 +1,19 @@
+{
+  "name": "@app/values",
+  "version": "1.0.0",
+  "description": "App's shared values",
+  "main": "index.ts",
+  "license": "MIT",
+  "scripts": {
+    "build": "yarn tsc"
+  },
+  "dependencies": {
+    "@app/config": "*",
+    "@app/types": "*",
+    "@app/dayjs": "*",
+    "zod": "3.21.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.2.2"
+  }
+}

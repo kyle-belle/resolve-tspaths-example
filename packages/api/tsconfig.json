@@ -1,0 +1,27 @@
+{
+    "extends": "@app/config/typescript/node/tsconfig.json",
+    "compilerOptions": {
+      "baseUrl": "./",
+      "outDir": "./build",
+      "paths": {
+        "@app/redis": ["../redis"],
+        "@app/redis/*": ["../redis/*"],
+        "@app/dayjs": ["../dayjs"],
+        "@app/dayjs/*": ["../dayjs/*"],
+        "@app/utils": ["../utils"],
+        "@app/utils/*": ["../utils/*"],
+        "@app/values": ["../values"],
+        "@app/values/*": ["../values/*"]
+      }
+    },
+    "include": [".", "../../typings"],
+    "exclude": ["node_modules", "build"],
+    "ts-node": {
+      "swc": true,
+      "transpileOnly": true,
+      "compilerOptions": {
+        "rootDir": "../",
+        "typeRoots": ["../../typings"]
+      }
+    }
+}

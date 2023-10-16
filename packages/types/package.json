@@ -1,0 +1,21 @@
+{
+  "name": "@app/types",
+  "version": "1.0.0",
+  "description": "App's Types!",
+  "main": "index.ts",
+  "license": "MIT",
+  "scripts": {
+    "build": "yarn tsc"
+  },
+  "dependencies": {
+    "@app/api": "*",
+    "@app/config": "*",
+    "@app/utils": "*",
+    "@app/values": "*",
+    "zod": "3.21.1"
+  },
+  "devDependencies": {
+    "@trpc/server": "^10.38.5",
+    "typescript": "^5.2.2"
+  }
+}

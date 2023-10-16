@@ -1,0 +1,14 @@
+{
+  "name": "@app/utils",
+  "version": "1.0.0",
+  "description": "App's util functions",
+  "main": "index.ts",
+  "license": "MIT",
+  "scripts": {
+    "build": "yarn tsc"
+  },
+  "dependencies": {
+    "@app/values": "*",
+    "@app/types": "*"
+  }
+}

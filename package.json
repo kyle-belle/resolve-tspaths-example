@@ -1,0 +1,45 @@
+{
+  "name": "app",
+  "private": true,
+  "version": "1.0.0",
+  "description": "App",
+  "main": "index.js",
+  "license": "MIT",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "yarn dev:api-only dev:admin",
+    "dev:api": "yarn api dev",
+    "build": "yarn api build",
+    "preview": "yarn api preview",
+    "redis:start": "yarn redis start",
+    "redis:stop": "yarn redis stop",
+    "api": "yarn workspace @app/api",
+    "redis": "yarn workspace @app/redis",
+    "dayjs": "yarn workspace @app/dayjs",
+    "types": "yarn workspace @app/types",
+    "values": "yarn workspace @app/values",
+    "config": "yarn workspace @app/config"
+  },
+  "devDependencies": {
+    "@swc/cli": "^0.1.62",
+    "@swc/core": "^1.3.93",
+    "@swc/helpers": "^0.5.3",
+    "dotenv-cli": "^7.3.0",
+    "nodemon": "^3.0.1",
+    "npm-run-all": "^4.1.5",
+    "prettier": "3.0.3",
+    "regenerator-runtime": "^0.14.0",
+    "resolve-tspaths": "^0.8.16",
+    "run-script-os": "^1.1.6",
+    "shx": "^0.3.4"
+  },
+  "resolutions": {
+    "@swc/core": "1.3.82"
+  },
+  "overrides": {
+    "@swc/core": "1.3.82"
+  },
+  "packageManager": "yarn@1.22.19"
+}
